@@ -95,7 +95,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.error{
+  color: #D8000C;
+  background-color: #FFBABA;
+  /*background-image: url('http://i.imgur.com/GnyDvKN.png');*/
+}
 
 
 

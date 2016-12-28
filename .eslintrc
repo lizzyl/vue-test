@@ -1,0 +1,15 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "semi": ["error", "always"],
+    "space-before-function-paren": "off"
+  },
+  "globals": {
+    "$": true,
+    "Vue": true,
+    "axios": true
+  },
+  "env": {
+    "browser": true
+  }
+}

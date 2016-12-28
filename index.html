@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title> <!-- 重要：标题改这里 -->
+        <title>{{ title }}</title> <!-- 重要：标题改这里 -->
         <meta name="keywords" content="胡莱游戏, 互爱科技">
         <meta name="description" content="">
         <meta name="renderer" content="webkit">
@@ -13,6 +13,8 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/remodal-default-theme.css">
+        <link rel="stylesheet" href="css/remodal.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -24,10 +26,53 @@
         <!-- Add your site or application content here -->
         <p>H5 最佳实战从现在开始</p>
 
+        <a href="javascript:;" id="download" class="digger_click" data-url="http://aa.bb.com/" data-track="点击按钮" onclick="_hmt.push(['_trackEvent', 'software', 'click', 'ttplayer']);">下载</a>
+
+        <div id="vueapp" v-html="ua"></div>
+
+        <div class="remodal-bg">
+          <div class="remodal" data-remodal-id="modal">
+            <p>网络出错啦</p>
+          </div>
+        </div>
+
         <script src="http://cdn.staticfile.org/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="http://cdn.staticfile.org/vue/2.1.8/vue.min.js"></script>
+        <script>
+          var snid = '111'; // <!-- 重要：snid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
+          var gameid = '222'; // <!-- 重要：gameid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
+
+          var detects = {
+            'hasjquery': 'jQuery' in window,
+            'hasvue': 'Vue' in window,
+            'hasconsole': 'console' in window,
+            'hasSearchParams': 'URLSearchParams' in window,
+            'hasdigger': '_digger_' in window
+          };
+
+          Modernizr.addTest(detects);
+          Modernizr.load([{
+            test: Modernizr.hasjquery,
+            nope: 'js/vendor/jquery-1.11.2.min.js'
+          },{
+            test: Modernizr.hasvue,
+            nope: 'js/vendor/vue-2.1.8.min.js'
+          },{
+            test: Modernizr.es6object,
+            nope: 'js/vendor/polyfills/Object/assign/polyfill.js'
+          },{
+            test: Modernizr.hasconsole,
+            nope: 'js/vendor/polyfills/console/log/polyfill.js'
+          },{
+            test: Modernizr.hasSearchParams,
+            nope: 'js/vendor/url-search-params.js'
+          },{
+            load: ['js/vendor/ua-parser.min.js', 'js/vendor/axios.min.js', 'js/vendor/remodal.min.js', 'js/main.js']
+          },{
+            test: Modernizr.hasdigger,
+            nope: ['js/digger-config.js']
+          }]);
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -41,7 +86,7 @@
         <!-- 百度统计 start-->
         <script>var _hmt = _hmt || [];
         (function() {
-            var tongjiId = 'xxx'; // 重要：百度统计 ID 改这里
+            var tongjiId = ''; // 重要：百度统计 ID 改这里
             var hm = document.createElement("script");
             hm.src = "http://hm.baidu.com/hm.js?" + tongjiId;
             var s = document.getElementsByTagName("script")[0];
