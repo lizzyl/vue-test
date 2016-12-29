@@ -13,9 +13,19 @@ function isiOS () {
   return $.ua.os.name === 'iOS';
 }
 
+function isWechat() {
+  return $.ua.browser.name === 'WeChat';
+}
+
+function isWeibo() {
+  return /weibo/i.test($.ua.ua);
+}
+
 console.log($.ua);
 console.log('Android: ' + isAndroid());
 console.log('iOS: ' + isiOS());
+console.log('Wechat: ' + isWechat());
+console.log('Weibo: ' + isWeibo());
 
 /* parse params */
 var searchParams = new URLSearchParams(window.location.search);
@@ -47,4 +57,6 @@ axios.get('./channel.json')
     model.open();
   });
 
-
+alert('asdf');
+var a, b;
+if ( a = b ) { console.log('asdf'); }
