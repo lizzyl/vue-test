@@ -56,7 +56,3 @@ axios.get('./channel.json')
     var model = $('[data-remodal-id=modal]').remodal();
     model.open();
   });
-
-alert('asdf');
-var a, b;
-if ( a = b ) { console.log('asdf'); }

@@ -32,7 +32,7 @@
 
         <div class="remodal-bg">
           <div class="remodal" data-remodal-id="modal">
-            <p>网络出错啦</p>
+            <p>网络慢或无信号<br>请靠近网络信号源或更换网络后再次尝试</p>
           </div>
         </div>
 
@@ -67,10 +67,15 @@
             test: Modernizr.hasSearchParams,
             nope: 'js/vendor/url-search-params.js'
           },{
-            load: ['js/vendor/ua-parser.min.js', 'js/vendor/axios.min.js', 'js/vendor/remodal.min.js', 'js/main.js']
+            test: Modernizr.promises,
+            nope: ['js/vendor/es6-promise.auto.min.js']
           },{
+            load: ['js/vendor/ua-parser.min.js', 'js/vendor/axios.min.js', 'js/vendor/remodal.min.js', 'js/main.js']
+          },/*{
             test: Modernizr.hasdigger,
             nope: ['js/digger-config.js']
+          },*/{
+            load: ['js/digger-config.js', 'js/vendor/digger.min.js']
           }]);
         </script>
 

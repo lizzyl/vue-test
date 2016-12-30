@@ -11,6 +11,7 @@
   "globals": {
     "$": true,
     "axios": true,
+    "swal": true,
     "Vue": true
   },
   "env": {
