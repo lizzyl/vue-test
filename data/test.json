@@ -1,0 +1,151 @@
+{
+  "channels": [{
+    "channelId": 1,
+    "head": {
+      "meta": {
+        "keywords": "",
+        "description": "",
+        "author": ""
+      },
+      "title": "",
+      "favicon": ""
+    },
+    "footer": {
+      "copyright": "Copyright :copyright: 2012 Hoolai Games. All Rights Reserved",
+      "address": "互爱互动（北京）科技有限公司版权所有",
+      "icpLicense": ""
+    },
+    "content": {
+      "bgImg": "./img/bg.jpg",
+      "baiduAnalytic": "",
+      "download": {
+        "androidUrl": "http://cdn.sango2.hulai.com/sango2_98.apk",
+        "iosUrl": "",
+      },
+      "comment": []
+    }
+  }, {
+    "channelId": 3,
+    "head": {
+      "meta": {
+        "keywords": "",
+        "description": "",
+        "author": ""
+      },
+      "title": "",
+      "favicon": ""
+    },
+    "footer": {
+      "copyright": "Copyright :copyright: 2012 Hoolai Games. All Rights Reserved",
+      "address": "互爱互动（北京）科技有限公司版权所有",
+      "icpLicense": ""
+    },
+    "content": {
+      "bgImg": "./img/bg.jpg",
+      "baiduAnalytic": "",
+      "download": {
+        "androidUrl": "http://uri6.com/yqaQry",
+        "iosUrl": "",
+      },
+      "comment": []
+    }
+  }, {
+    "channelId": 2,
+    "head": {
+      "meta": {
+        "keywords": "渠道2",
+        "description": "渠道",
+        "author": "yourname@hoolai.com"
+      },
+      "title": "XX游戏渠道",
+      "favicon": "favicon.ico"
+    },
+    "footer": {
+      "copyright": "Copyright :copyright: 2012 Hoolai Games. All Rights Reserved",
+      "address": "互爱互动（北京）科技有限公司版权所有",
+      "icpLicense": "京ICP备11034336号-1 网络文化经营许可证-京网文[2014]0904-204号 京公网安备11010502022348"
+    },
+    "content": {
+      "bgImg": "./img/bg.jpg",
+      "baiduAnalytic": "fdhghg",
+      "download": {
+        "androidUrl": "http://uri6.com/yqaQry",
+        "iosUrl": "http://tracking.hoolai.com/tracking/941/",
+      },
+      "comment": [{
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 20,
+        "starNum": 1,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/2.jpg",
+        "name": "天道神威",
+        "praiseNum": 30,
+        "starNum": 2,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 20,
+        "starNum": 3,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 30,
+        "starNum": 5,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 20,
+        "starNum": 4,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 30,
+        "starNum": 5,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 20,
+        "starNum": 4,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }, {
+        "touxiangIcon": "./photo/1.jpg",
+        "name": "天道神威",
+        "praiseNum": 30,
+        "starNum": 5,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！"
+      }]
+    }
+  }, {
+    "channelId": 4,
+    "head": {
+      "meta": {
+        "keywords": "渠道2",
+        "description": "渠道",
+        "author": "yourname@hoolai.com"
+      },
+      "title": "XX游戏渠道",
+      "favicon": "favicon.ico"
+    },
+    "footer": {
+      "copyright": "Copyright :copyright: 2012 Hoolai Games. All Rights Reserved",
+      "address": "互爱互动（北京）科技有限公司版权所有",
+      "icpLicense": "京ICP备11034336号-1 网络文化经营许可证-京网文[2014]0904-204号 京公网安备11010502022348"
+    },
+    "content": {
+      "bgImg": "./img/bg.jpg",
+      "baiduAnalytic": "fdhghg",
+      "download": {
+        "androidUrl": "http://cdn.sango2.hulai.com/sango2_98.apk",
+        "iosUrl": "http://tracking.hoolai.com/tracking/941/",
+      },
+      "comment": []
+    }
+  }]
+}

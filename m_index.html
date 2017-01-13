@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title v-cloak v-text="channel.head.title"></title>
+    <!-- 重要：标题改这里 -->
+    <meta name="keywords" :content="channel.head.meta.keywords">
+    <meta name="description" :content="channel.head.meta.description">
+    <meta name="author" :content="channel.head.meta.author">
+    <meta name="renderer" content="webkit">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=640,target-densitydpi=320, minimum-scale=0.5, maximum-scale=2,user-scalable=0">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" :href="channel.head.favicon">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/remodal-default-theme.css">
+    <link rel="stylesheet" href="./css/remodal.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">浏览器 <strong>版本太低</strong>。请使用 <a href="http://browser.qq.com/">QQ 浏览器</a> 访问获得更好体验。</p>
+        <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="wrap" :style="bgObject">
+        <div class="btns">
+        <!-- 可能只能有一个下载按钮 -->
+            <a id="android" class="android" @click="androidClick" href="javascript:;">下载</a>
+            <!-- <a id="ios" class="ios" @click="iosClick" href="javascript:;" >ios下载</a> -->
+        </div>
+        <!-- <div class="remodal-bg">
+            <div class="remodal" data-remodal-id="modal">
+                <p>网络慢或无信号
+                    <br>请靠近网络信号源或更换网络后再次尝试</p>
+            </div>
+        </div> -->
+        <div class="discuss">
+            <div v-cloak class="discuss-sec" v-for="comment in channel.content.comment">
+                <img class="touxiang" :src="comment.touxiangIcon" alt="touxiang">
+                <div class="info">
+                    <span class="name">{{comment.name}}</span>
+                    <ul class="star-info">
+                        <li v-for="item in comment.starNum"><img src="./img/star.png" alt="touxiang"></li>
+                    </ul>
+                    <div class="zan-info">
+                        <div>{{comment.praiseNum}}</div>
+                        <img src="img/zan.png" alt="">
+                    </div>
+                    <p>{{comment.discussion}}</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p v-cloak class="1">{{channel.footer.copyright}}</p>
+            <p v-cloak class="address">{{channel.footer.address}}</p>
+            <p v-cloak class="3">{{channel.footer.icpLicense}}</p>
+        </footer>
+    </div>
+    <!-- weixinimg -->
+    <div v-cloak v-show="show" id="weixinMsg" class="weixin">
+        <img src="img/tip.png">
+        <a href="javascript:;" class="close" @click="closeTip"></a>
+    </div>
+    <div v-cloak v-show="show" id="shadow" @click="closeTip"></div>
+    <script src="http://cdn.staticfile.org/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script src="http://cdn.staticfile.org/vue/2.1.8/vue.min.js"></script> -->
+    <script>
+    var snid = '111'; // <!-- 重要：snid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
+    var gameid = '222'; // <!-- 重要：gameid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
+
+    var detects = {
+        'hasjquery': 'jQuery' in window,
+        'hasvue': 'Vue' in window,
+        'hasconsole': 'console' in window,
+        'hasSearchParams': 'URLSearchParams' in window,
+        'hasdigger': '_digger_' in window
+    };
+
+    Modernizr.addTest(detects);
+    Modernizr.load([{
+            test: Modernizr.hasjquery,
+            nope: 'js/vendor/jquery-1.11.2.min.js'
+        }, {
+            test: Modernizr.hasvue,
+            nope: 'js/vendor/vue.js'
+        }, {
+            test: Modernizr.es6object,
+            nope: 'js/vendor/polyfills/Object/assign/polyfill.js'
+        }, {
+            test: Modernizr.hasconsole,
+            nope: 'js/vendor/polyfills/console/log/polyfill.js'
+        }, {
+            test: Modernizr.hasSearchParams,
+            nope: 'js/vendor/url-search-params.js'
+        }, {
+            test: Modernizr.promises,
+            nope: ['js/vendor/es6-promise.auto.min.js']
+        }, {
+            load: ['js/vendor/ua-parser.min.js', 'js/vendor/axios.min.js', 'js/vendor/remodal.min.js', 'js/main.js']
+        },
+        /*{
+                    test: Modernizr.hasdigger,
+                    nope: ['js/digger-config.js']
+                  },*/
+        {
+            load: ['js/digger-config.js', 'js/vendor/digger.min.js']
+        }
+    ]);
+    </script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/vendor/axios.min.js"></script> -->
+    <!--     <script src="js/vendor/vue.js"></script>
+    <script src="js/vendor/vue-resource.min.js"></script>
+    <script src="js/main.js"></script> -->
+</body>
+
+</html>

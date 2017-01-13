@@ -30,7 +30,7 @@ window._digger_ = {
   },
   eventConfigArr: [{
     eventType: 'click',
-    selectors: ["a[class='digger_click']"],
+    selectors: ["a[id='android']"],
     extendParams: {
       event_flag: 'downloadClick',
       act: 'click',
@@ -40,6 +40,9 @@ window._digger_ = {
 };
 
 var e = document.createElement('script');
-e.src = 'js/vendor/digger.min.js'; e.type = 'text/javascript'; e.async = true; e.defer = true;
+e.src = 'js/vendor/digger.min.js';
+e.type = 'text/javascript';
+e.async = true;
+e.defer = true;
 var e0 = document.getElementsByTagName('script')[0];
 e0.parentNode.insertBefore(e, e0);

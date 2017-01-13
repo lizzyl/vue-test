@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "channels": {
+      "description": "Promotion channels",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "channelId": {
+            "type": "number"
+          },
+          "head": {
+            "description": "head",
+            "type": "object",
+            "properties": {
+              "meta": {
+                "description": "meta info in head",
+                "type": "object",
+                "properties": {
+                  "keywords": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "author": {
+                    "type": "string"
+                  }
+                },
+                "required": ["keywords", "description", "author"]
+              },
+              "title": {
+                "type": "string"
+              },
+              "favicon": {
+                "type": "string"
+              }
+            },
+            "required": ["meta", "title", "favicon"]
+          },
+          "footer": {
+            "type": "object",
+            "properties": {
+              "copyright": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "icpLicence": {
+                "type": "string"
+              }
+            },
+            "required": ["copyright", "address", "icpLicense"]
+          },
+          "content": {
+            "type": "object",
+            "properties": {
+              "bgImg": {
+                "type": "string"
+              },
+              "baiduAnalytic": {
+                "type": "string"
+              },
+              "download": {
+                "type": "object",
+                "properties": {
+                  "iosUrl": {
+                    "type": "string"
+                  },
+                  "androidUrl": {
+                    "type": "string"
+                  }
+                },
+                "required": ["iosUrl", "androidUrl"]
+              },
+              "comment": {
+                "type": "array",
+                "minItems": 0,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "touxiangIcon": {
+                      "type": "string",
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "praiseNum": {
+                      "type": "number"
+                    },
+                    "starNum": {
+                      "type": "number"
+                    },
+                    "discussion": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": ["touxiangIcon", "name", "praiseNum", "starNum", "discussion"]
+              }
+            },
+            "required": ["bgImg", "baiduAnalytic", "download", "comment"]
+          }
+        },
+        "required": ["channelId", "head", "footer", "content"]
+      }
+    }
+  },
+  "required": ["channels"]
+}
