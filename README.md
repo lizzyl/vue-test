@@ -19,3 +19,13 @@ npm install -g eslint eslint-config-standard eslint-plugin-standard eslint-plugi
 # 问题反馈
 
 * WEB 研发组
+
+
+# 下载
+
+下载with_param_channel 分支的部分
+
+```
+git clone -b with_param_channel ssh://git@192.168.1.169:10022/webteam/h5template.git
+
+```
