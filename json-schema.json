@@ -84,7 +84,7 @@
                   "type": "object",
                   "properties": {
                     "touxiangIcon": {
-                      "type": "string",
+                      "type": "string"
                     },
                     "name": {
                       "type": "string"

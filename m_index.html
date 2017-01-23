@@ -69,7 +69,7 @@
     </div>
     <div v-cloak v-show="show" id="shadow" @click="closeTip"></div>
     <script src="http://cdn.staticfile.org/jquery/1.11.2/jquery.min.js"></script>
-    <!-- <script src="http://cdn.staticfile.org/vue/2.1.8/vue.min.js"></script> -->
+    <script src="http://cdn.staticfile.org/vue/2.1.8/vue.min.js"></script>
     <script>
     var snid = '111'; // <!-- 重要：snid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
     var gameid = '222'; // <!-- 重要：gameid 在这里赋值，DOM 取值用原生不要使用 $ 符号 -->
@@ -104,20 +104,9 @@
         }, {
             load: ['js/vendor/ua-parser.min.js', 'js/vendor/axios.min.js', 'js/vendor/remodal.min.js', 'js/main.js']
         }
-        /*{
-                    test: Modernizr.hasdigger,
-                    nope: ['js/digger-config.js']
-                  },*/
-        /*{
-            load: ['js/digger-config.js', 'js/vendor/digger.min.js']
-        }*/
+
     ]);
     </script>
-    <script src="js/plugins.js"></script>
-    <!-- <script src="js/vendor/axios.min.js"></script> -->
-    <!--     <script src="js/vendor/vue.js"></script>
-    <script src="js/vendor/vue-resource.min.js"></script>
-    <script src="js/main.js"></script> -->
 </body>
 
 </html>
