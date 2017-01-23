@@ -1,0 +1,88 @@
+{
+  "channels": [{
+    "channelId": 1,
+    "head": {
+      "meta": {
+        "keywords": "",
+        "description": "",
+        "author": ""
+      },
+      "title": "超时空三国",
+      "favicon": ""
+    },
+    "footer": {
+      "copyright": "Copyright :copyright: 2012 Hoolai Games. All Rights Reserved",
+      "address": "互爱互动（北京）科技有限公司版权所有",
+      "icpLicense": "京ICP备11034336号-1 网络文化经营许可证-京网文[2014]0904-204号 京公网安备11010502022348"
+    },
+    "content": {
+      "bgImg": "./img/bg.jpg",
+      "baiduAnalytic": "ec49d1f605065667d55c032aa86c7e5a",
+      "download": {
+        "androidUrl": "http://uri6.com/j2UBj2",
+        "iosUrl": ""
+      },
+      "comments": [{
+        "name": "天道神威",
+        "starNum": 5,
+        "praiseNum": 946,
+        "discussion": "五星好评，纯粹为制作给分，技能丰富，免费抽武将，非常良心的制作……终于不是无脑单机，要和兄弟一起玩才HIGH的游戏！",
+        "touxiangIcon": "./photo/1.jpg"
+      }, {
+        "touxiangIcon": "./photo/2.jpg",
+        "name": "Usagi欧欧哒",
+        "discussion": "一直讨厌回合制的人都爱玩的游戏！很适合女孩子玩的，可惜图标有点丑，希望多出几个职业，多做宣传，感觉会火起来的游戏！",
+        "praiseNum": 569,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/3.jpg",
+        "name": "萧晚晚",
+        "discussion": "技能丰富，国战时状态多样，打起来时每一战都比较烧脑，无脑平A是不行的，语音聊天也不错！总之是做的很扎实的游戏。",
+        "praiseNum": 488,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/4.jpg",
+        "name": "二饼子",
+        "discussion": "这游戏上手难度不大，而且不花钱也能玩的比较舒服，游戏平衡性很好，希望能快点更新出更多有趣的角色。",
+        "praiseNum": 529,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/5.jpg",
+        "name": "爱吃鱼的狐小狸",
+        "discussion": "游戏非常不错，如果喜欢慢慢玩出趣味的，真心推荐下，这游戏有超强的代入感和可玩性。",
+        "praiseNum": 385,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/6.jpg",
+        "name": "不吃菜的饭",
+        "discussion": "无与伦比，希望制作公司更加优化游戏，刚进入时觉得画面不好看，玩久了觉得画风惊奇啊哈哈，比那些只靠美术没有内涵的游戏好玩多了，大赞！",
+        "praiseNum": 529,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/7.jpg",
+        "name": "lort",
+        "discussion": "绝对的好游戏！我玩过太多手游，这个游戏真的好，系统庞大但操作简单，不是国产那些坑钱游戏能比，最重要的是国战好玩！",
+        "praiseNum": 79,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/8.jpg",
+        "name": " 猫咪yo猫咪",
+        "discussion": "猫咪yo猫咪",
+        "praiseNum": 436,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/9.jpg",
+        "name": "潜龙@com",
+        "discussion": "初看觉得美术风格丑，玩起来后感觉这个游戏确实是我玩过的屈指可数的好游戏，希望尽量延长他的生命力，向游戏的开发者和运营者们致敬！",
+        "praiseNum": 789,
+        "starNum": 5
+      }, {
+        "touxiangIcon": "./photo/10.jpg",
+        "name": "芈、",
+        "discussion": "国战很好玩，玩起来就停不下来，不充钱也能玩儿的开心，虽然还是冲钱买角色了，但是觉得值，感觉要荒废正业了，好游戏就是这点不好，哈哈。",
+        "praiseNum": 624,
+        "starNum": 5
+      }]
+    }
+  }]
+}

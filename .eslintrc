@@ -1,17 +1,18 @@
+
 {
-  "extends": ["eslint:recommended"],
+  "extends": "eslint:recommended",
   "rules": {
-    "curly": ["error", "all"],
-    "eqeqeq": ["error", "always"],
-    "no-alert": "error",
-    "no-console": "warn",
+    "indent": ["error", 2, { "VariableDeclarator": 2 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "space-before-function-paren": "off"
+    "comma-dangle": ["error", "never"],
+    "no-cond-assign": ["error", "always"],
+    "no-console": "warn"
   },
   "globals": {
     "$": true,
     "axios": true,
-    "swal": true,
     "Vue": true
   },
   "env": {
