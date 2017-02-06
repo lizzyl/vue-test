@@ -119,7 +119,7 @@ axios.get('./data/data.json')
           }]
         };
         var digger = document.createElement('script');
-        digger.src = 'http://s0.web.hulai.com/static/digger/digger-20170113164255.min.js';
+        digger.src = '//s0ori.web.hulai.com/static/digger/digger-20170113164255.min.js';
         var s1 = document.getElementsByTagName('script')[1];
         s1.parentNode.insertBefore(digger, s1);
 
